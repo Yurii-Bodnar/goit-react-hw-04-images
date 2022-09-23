@@ -15,7 +15,7 @@ class ImageGallery extends Component {
     isModalOpen: false,
     modalData: null,
   };
-
+;
   componentDidUpdate(prevProps, prevState) {
     const API_KEY = '29465886-f70572c8b9c11640077f8b34a';
     if (
@@ -43,6 +43,7 @@ class ImageGallery extends Component {
   }
 
   togleModal = (modalData = null) =>{
+    console.log(modalData);
  this.setState(prew =>({isModalOpen:!prew.isModalOpen,modalData,}))
   }
 
