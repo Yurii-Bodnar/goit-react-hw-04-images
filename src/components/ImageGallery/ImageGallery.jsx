@@ -43,7 +43,6 @@ class ImageGallery extends Component {
   }
 
   togleModal = (modalData = null) =>{
-    console.log(modalData);
  this.setState(prew =>({isModalOpen:!prew.isModalOpen,modalData,}))
   }
 
